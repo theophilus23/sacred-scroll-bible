@@ -1,0 +1,287 @@
+{
+  "defaultVersion": "king-james-version",
+  "totalVersions": 28,
+  "totalBooks": 66,
+  "versions": [
+    {
+      "id": "king-james-version",
+      "code": "KJV",
+      "name": "King James Version",
+      "nativeName": "King James Version (1611/1769)",
+      "language": "English",
+      "year": "1769",
+      "category": "English - Classic",
+      "assetPath": "assets/bibles/king-james-version"
+    },
+    {
+      "id": "new-king-james-version-1982",
+      "code": "NKJV",
+      "name": "New King James Version",
+      "nativeName": "New King James Version",
+      "language": "English",
+      "year": "1982",
+      "category": "English - Modern",
+      "assetPath": "assets/bibles/new-king-james-version-1982"
+    },
+    {
+      "id": "21st-century-kjv",
+      "code": "KJ21",
+      "name": "21st Century King James Version",
+      "nativeName": "21st Century KJV",
+      "language": "English",
+      "year": "1994",
+      "category": "English - Classic",
+      "assetPath": "assets/bibles/21st-century-kjv"
+    },
+    {
+      "id": "american-king-james-version-1999",
+      "code": "AKJV",
+      "name": "American King James Version",
+      "nativeName": "American KJV",
+      "language": "English",
+      "year": "1999",
+      "category": "English - Classic",
+      "assetPath": "assets/bibles/american-king-james-version-1999"
+    },
+    {
+      "id": "new-international-version-1984-us",
+      "code": "NIV-US",
+      "name": "New International Version (US)",
+      "nativeName": "NIV 1984 (US)",
+      "language": "English",
+      "year": "1984",
+      "category": "English - Modern",
+      "assetPath": "assets/bibles/new-international-version-1984-us"
+    },
+    {
+      "id": "new-international-version-uk",
+      "code": "NIV-UK",
+      "name": "New International Version (UK)",
+      "nativeName": "NIV (Anglicised)",
+      "language": "English",
+      "year": "1984",
+      "category": "English - Modern",
+      "assetPath": "assets/bibles/new-international-version-uk"
+    },
+    {
+      "id": "new-international-reader-s-version-1998",
+      "code": "NIrV",
+      "name": "New International Reader's Version",
+      "nativeName": "NIrV (1998)",
+      "language": "English",
+      "year": "1998",
+      "category": "English - Modern",
+      "assetPath": "assets/bibles/new-international-reader-s-version-1998"
+    },
+    {
+      "id": "new-living-translation-1996",
+      "code": "NLT",
+      "name": "New Living Translation",
+      "nativeName": "New Living Translation",
+      "language": "English",
+      "year": "1996",
+      "category": "English - Modern",
+      "assetPath": "assets/bibles/new-living-translation-1996"
+    },
+    {
+      "id": "new-english-translation-2005",
+      "code": "NET",
+      "name": "New English Translation",
+      "nativeName": "NET Bible (2005)",
+      "language": "English",
+      "year": "2005",
+      "category": "English - Modern",
+      "assetPath": "assets/bibles/new-english-translation-2005"
+    },
+    {
+      "id": "holman-christian-standard-bible-2004",
+      "code": "HCSB",
+      "name": "Holman Christian Standard Bible",
+      "nativeName": "HCSB (2004)",
+      "language": "English",
+      "year": "2004",
+      "category": "English - Modern",
+      "assetPath": "assets/bibles/holman-christian-standard-bible-2004"
+    },
+    {
+      "id": "revised-standard-version-1952",
+      "code": "RSV",
+      "name": "Revised Standard Version",
+      "nativeName": "RSV (1952)",
+      "language": "English",
+      "year": "1952",
+      "category": "English - Classic",
+      "assetPath": "assets/bibles/revised-standard-version-1952"
+    },
+    {
+      "id": "holy-bible-revised-version-1885",
+      "code": "RV",
+      "name": "Holy Bible Revised Version",
+      "nativeName": "Revised Version (1885)",
+      "language": "English",
+      "year": "1885",
+      "category": "English - Classic",
+      "assetPath": "assets/bibles/holy-bible-revised-version-1885"
+    },
+    {
+      "id": "world-english-bible",
+      "code": "WEB",
+      "name": "World English Bible",
+      "nativeName": "World English Bible (Public Domain)",
+      "language": "English",
+      "year": "2000",
+      "category": "English - Modern",
+      "assetPath": "assets/bibles/world-english-bible"
+    },
+    {
+      "id": "young-s-literal-translation-1898",
+      "code": "YLT",
+      "name": "Young's Literal Translation",
+      "nativeName": "Young's Literal (1898)",
+      "language": "English",
+      "year": "1898",
+      "category": "English - Literal",
+      "assetPath": "assets/bibles/young-s-literal-translation-1898"
+    },
+    {
+      "id": "bible-in-basic-english-1964",
+      "code": "BBE",
+      "name": "Bible in Basic English",
+      "nativeName": "Basic English (1964)",
+      "language": "English",
+      "year": "1964",
+      "category": "English - Everyday",
+      "assetPath": "assets/bibles/bible-in-basic-english-1964"
+    },
+    {
+      "id": "complementary-english-version-1995",
+      "code": "CEV",
+      "name": "Contemporary English Version",
+      "nativeName": "CEV (1995)",
+      "language": "English",
+      "year": "1995",
+      "category": "English - Everyday",
+      "assetPath": "assets/bibles/complementary-english-version-1995"
+    },
+    {
+      "id": "easy-to-read-revised-version-2005",
+      "code": "ERV",
+      "name": "Easy-to-Read Revised Version",
+      "nativeName": "ERV (2005)",
+      "language": "English",
+      "year": "2005",
+      "category": "English - Everyday",
+      "assetPath": "assets/bibles/easy-to-read-revised-version-2005"
+    },
+    {
+      "id": "today-s-english-version-good-news-bible-",
+      "code": "GNB",
+      "name": "Good News Bible (TEV)",
+      "nativeName": "Today's English Version",
+      "language": "English",
+      "year": "1992",
+      "category": "English - Everyday",
+      "assetPath": "assets/bibles/today-s-english-version-good-news-bible-"
+    },
+    {
+      "id": "the-complete-jewish-bible-1998",
+      "code": "CJB",
+      "name": "Complete Jewish Bible",
+      "nativeName": "Complete Jewish Bible (1998)",
+      "language": "English / Messianic",
+      "year": "1998",
+      "category": "Messianic / Hebraic",
+      "assetPath": "assets/bibles/the-complete-jewish-bible-1998"
+    },
+    {
+      "id": "hebrew-names-version",
+      "code": "HNV",
+      "name": "Hebrew Names Version",
+      "nativeName": "Hebrew Names Version (WEB)",
+      "language": "English / Messianic",
+      "year": "2000",
+      "category": "Messianic / Hebraic",
+      "assetPath": "assets/bibles/hebrew-names-version"
+    },
+    {
+      "id": "telugu-bible-bsi",
+      "code": "TEL-BSI",
+      "name": "Telugu Bible (BSI)",
+      "nativeName": "తెలుగు పరిశుద్ధ గ్రంథము (BSI)",
+      "language": "Telugu",
+      "year": "BSI",
+      "category": "Indian Languages",
+      "assetPath": "assets/bibles/telugu-bible-bsi"
+    },
+    {
+      "id": "telugu-bible-wbtc",
+      "code": "TEL-WBTC",
+      "name": "Telugu Bible (WBTC)",
+      "nativeName": "తెలుగు బైబిల్ (WBTC)",
+      "language": "Telugu",
+      "year": "WBTC",
+      "category": "Indian Languages",
+      "assetPath": "assets/bibles/telugu-bible-wbtc"
+    },
+    {
+      "id": "english-lo-parishuddha-grandham",
+      "code": "TEL-ROM",
+      "name": "English-lo Parishuddha Grandham",
+      "nativeName": "Telugu (Roman Transliteration)",
+      "language": "Telugu (Romanized)",
+      "year": "BSI",
+      "category": "Indian Languages",
+      "assetPath": "assets/bibles/english-lo-parishuddha-grandham"
+    },
+    {
+      "id": "tamil-bible",
+      "code": "TAM",
+      "name": "Tamil Bible",
+      "nativeName": "தமிழ் பரிசுத்த வேதாகமம்",
+      "language": "Tamil",
+      "year": "BSI",
+      "category": "Indian Languages",
+      "assetPath": "assets/bibles/tamil-bible"
+    },
+    {
+      "id": "malayalam-bible",
+      "code": "MAL",
+      "name": "Malayalam Bible",
+      "nativeName": "സത്യവേദപുസ്തകം (Malayalam)",
+      "language": "Malayalam",
+      "year": "BSI",
+      "category": "Indian Languages",
+      "assetPath": "assets/bibles/malayalam-bible"
+    },
+    {
+      "id": "kannada-bible",
+      "code": "KAN",
+      "name": "Kannada Bible",
+      "nativeName": "ಕನ್ನಡ ಸತ್ಯವೇದವು (Kannada)",
+      "language": "Kannada",
+      "year": "BSI",
+      "category": "Indian Languages",
+      "assetPath": "assets/bibles/kannada-bible"
+    },
+    {
+      "id": "hindi-bible",
+      "code": "HIN",
+      "name": "Hindi Bible",
+      "nativeName": "पवित्र बाइबिल (Hindi)",
+      "language": "Hindi",
+      "year": "BSI",
+      "category": "Indian Languages",
+      "assetPath": "assets/bibles/hindi-bible"
+    },
+    {
+      "id": "bengali-bible",
+      "code": "BEN",
+      "name": "Bengali Bible",
+      "nativeName": "পবিত্র বাইবেল (Bengali)",
+      "language": "Bengali",
+      "year": "BSI",
+      "category": "Indian Languages",
+      "assetPath": "assets/bibles/bengali-bible"
+    }
+  ]
+}

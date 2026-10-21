@@ -1,0 +1,50 @@
+name: sacred_scroll_bible
+description: Native-styled iOS Bible App in Flutter supporting KJV and 27 additional English, Messianic, and Indian language Bible translations.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.2.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/bibles/manifest.json
+    - assets/bibles/king-james-version/
+    - assets/bibles/new-king-james-version-1982/
+    - assets/bibles/21st-century-kjv/
+    - assets/bibles/american-king-james-version-1999/
+    - assets/bibles/new-international-version-1984-us/
+    - assets/bibles/new-international-version-uk/
+    - assets/bibles/new-international-reader-s-version-1998/
+    - assets/bibles/new-living-translation-1996/
+    - assets/bibles/new-english-translation-2005/
+    - assets/bibles/holman-christian-standard-bible-2004/
+    - assets/bibles/revised-standard-version-1952/
+    - assets/bibles/holy-bible-revised-version-1885/
+    - assets/bibles/world-english-bible/
+    - assets/bibles/young-s-literal-translation-1898/
+    - assets/bibles/bible-in-basic-english-1964/
+    - assets/bibles/complementary-english-version-1995/
+    - assets/bibles/easy-to-read-revised-version-2005/
+    - assets/bibles/today-s-english-version-good-news-bible-/
+    - assets/bibles/the-complete-jewish-bible-1998/
+    - assets/bibles/hebrew-names-version/
+    - assets/bibles/telugu-bible-bsi/
+    - assets/bibles/telugu-bible-wbtc/
+    - assets/bibles/english-lo-parishuddha-grandham/
+    - assets/bibles/tamil-bible/
+    - assets/bibles/malayalam-bible/
+    - assets/bibles/kannada-bible/
+    - assets/bibles/hindi-bible/
+    - assets/bibles/bengali-bible/

@@ -1,0 +1,68 @@
+name: Build iOS Bible App (.ipa)
+
+on:
+  push:
+    branches: [ main, master ]
+  workflow_dispatch: # Enables a 1-click "Run workflow" button in the GitHub Actions tab
+
+jobs:
+  build-ios-ipa:
+    name: Build Unsigned iOS .ipa on macOS
+    runs-on: macos-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Flutter (Stable)
+        uses: subosito/flutter-action@v2
+        with:
+          channel: 'stable'
+          cache: true
+
+      - name: Generate Xcode Runner Project & Preserve App Files
+        run: |
+          # Back up custom pubspec.yaml, lib/, and Info.plist before generating Xcode project files
+          cp pubspec.yaml /tmp/pubspec.yaml.bak
+          cp -R lib /tmp/lib_bak
+          if [ -f ios/Runner/Info.plist ]; then
+            cp ios/Runner/Info.plist /tmp/Info.plist.bak
+          fi
+
+          # Generate full ios/Runner.xcodeproj and ios/Runner.xcworkspace on the macOS runner
+          flutter create --platforms=ios --project-name sacred_scroll_bible --org com.sacredscroll.bible .
+
+          # Restore custom pubspec.yaml, Dart source files, and Info.plist
+          cp /tmp/pubspec.yaml.bak pubspec.yaml
+          rm -rf lib && cp -R /tmp/lib_bak lib
+          if [ -f /tmp/Info.plist.bak ]; then
+            cp /tmp/Info.plist.bak ios/Runner/Info.plist
+          fi
+
+      - name: Install Flutter Dependencies
+        run: flutter pub get
+
+      - name: Verify Bundled Bible Translations (28 Versions)
+        run: |
+          echo "Bundled Bible directories:"
+          find assets/bibles -mindepth 1 -maxdepth 1 -type d | wc -l
+
+      - name: Build iOS Release Binary (No Codesign)
+        run: |
+          flutter build ios --release --no-codesign
+
+      - name: Package Runner.app into Installable .ipa Archive
+        run: |
+          cd build/ios/iphoneos
+          mkdir -p Payload
+          cp -R Runner.app Payload/
+          zip -qq -r -9 SacredScroll_Bible_iOS.ipa Payload
+          ls -lh SacredScroll_Bible_iOS.ipa
+
+      - name: Upload Downloadable .ipa Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: SacredScroll-Bible-iOS-IPA
+          path: build/ios/iphoneos/SacredScroll_Bible_iOS.ipa
+          if-no-files-found: error
+          retention-days: 30
